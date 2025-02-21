@@ -17,4 +17,7 @@ deploymentTarget = "cloudrun"
 [[ports]]
 localPort = 3000
 externalPort = 80
-run = "python3 manage.py runserver 0.0.0.0:8000"
+
+[[ports]]
+localPort = 8000
+externalPort = 8000
