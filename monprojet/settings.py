@@ -5,7 +5,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-q!m^g!i!6$0h^a!4*#=4!^&amp;^5i=0^#n!4&amp;@=k!^p-d_#=a^'
 DEBUG = True
 
-ALLOWED_HOSTS = ['*', '.repl.co']
+ALLOWED_HOSTS = ['.repl.co', '.replit.dev', '0.0.0.0']
+
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -84,3 +85,7 @@ USE_TZ = True
 STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+CSRF_TRUSTED_ORIGINS = [
+    "https://153575d5-2ed0-4dd8-be9c-59191a404ad0-00-v570etf3w0lx.riker.replit.dev"
+]
+
