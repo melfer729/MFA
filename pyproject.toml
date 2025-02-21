@@ -7,3 +7,17 @@ requires-python = ">=3.11"
 dependencies = [
     "django>=5.1.6",
 ]
+[tool.poetry]
+name = "mfa"
+version = "0.1.0"
+description = "Votre projet Django"
+authors = ["VotreNom <votre.email@example.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+django = "^5.1.6"
+gunicorn = "^21.0.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
